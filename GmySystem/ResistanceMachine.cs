@@ -28,10 +28,11 @@ namespace GmySystem
         }
 
         public ResistanceMachine(int eqipmentID, string name, bool isAvailable, int weightStackMax)
-        {
-
-            weightStackMax = WeightStackMax; 
+           : base (equipmentID, name, isAvailable)
+        { 
+    this.WeightStackMax = weightStackMax; 
         }
+
 
     }
 }
